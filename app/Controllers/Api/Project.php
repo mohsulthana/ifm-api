@@ -14,14 +14,12 @@ class Project extends ResourceController
 
   public function index()
   {
-    // $projects = $this->model->findAll();
-    $projects = $this->model->join('users', 'users.user_id = project.customer_id', 'inner')->findAll();
-    return $this->respond($projects, 200);
+    return $this->respond($this->model->findAll(), 200);
   }
 
   public function projectByCustomer($id = null)
   {
-    $projects = $this->model->join('users', 'users.user_id = project.customer_id', 'inner')->where(['customer_id' => $id])->findAll();
+    $projects = $this->model->join('users', 'users.user_id = project.customer_id')->where(['project.customer_id' => $id])->findAll();
     return $this->respond($projects, 200);
   }
 
@@ -30,12 +28,12 @@ class Project extends ResourceController
     $validation = \Config\Services::validation();
 
     $data = $this->request->getJSON();
-    print_r($data);
+
     $data = [
       'project'   => $data->project->project,
       'description' => $data->project->description,
       'customer_id' => $data->project->customer,
-      'service_id'  => $data->project->service_id
+      'qr_code' => $data->project->qr_code
     ];
 
     if ($validation->run($data, 'project') == FALSE) {
@@ -59,6 +57,68 @@ class Project extends ResourceController
         return $this->respond($response, 200);
       }
     }
+  }
+
+  public function update($id = NULL)
+  {
+    $validation =  \Config\Services::validation();
+    $json = $this->request->getJSON();
+
+    $data = $this->model->asObject()->find($id);
+
+    if ($data) {
+      $project = [
+        'project' => $json->project,
+        'description' => $json->description
+      ];
+
+      if ($validation->run($project, 'project') == FALSE) {
+        $response = [
+          'status' => 500,
+          'error' => true,
+          'data' => $validation->getErrors(),
+        ];
+        return $this->respond($response, 500);
+      } else {
+        $update = $this->model->update($id, $project);
+
+        if ($update) {
+          $msg = ['message' => 'Project updated'];
+          $response = [
+            'status' => 200,
+            'project'   => $this->model->find($id),
+            'data' => $msg,
+          ];
+          return $this->respond($response, 200);
+        }
+      }
+    }
+  }
+
+  public function show($id = NULL)
+  {
+    $get = $this->model->find($id);
+    $task = $this->model->select('task.task, task.status')->join('task', 'task.project_id = project.id', 'inner')->where('project.id', $id)->findAll();
+    // $task = $this->model->join('task', 'task.project_id = project.id', 'inner')->where('project.id', $id)->findAll();
+
+    if ($get) {
+      $code = 200;
+      $response = [
+        'status' => $code,
+        'error' => false,
+        'data' => $get,
+        'task'  => $task
+      ];
+    } else {
+      $code = 401;
+      $msg = ['message' => 'Not Found'];
+      $response = [
+        'status' => $code,
+        'error' => true,
+        'data' => $msg,
+      ];
+    }
+    return $this->respond($response, $code);
   }
 
   public function delete($id = NULL)

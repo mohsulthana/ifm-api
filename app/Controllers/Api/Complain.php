@@ -14,42 +14,51 @@ class Complain extends ResourceController
 
   public function index()
   {
-    return $this->respond($this->model->findAll(), 200);
+    $complain = $this->model->join('project', 'project.id = complain.project_id', 'inner')->join('users', 'users.user_id = complain.people', 'inner')->findAll();
+    return $this->respond($complain, 200);
   }
 
-  // public function create()
-  // {
-  //   $validation = \Config\Services::validation();
+  public function complainByCustomer($id = NULL)
+  {
+    $complain = $this->model->join('project', 'project.id = complain.project_id', 'inner')->join('users', 'users.user_id = complain.people', 'inner')->where('complain.people', $id)->findAll();
+    return $this->respond($complain, 200);
+  }
 
-  //   $data = $this->request->getJSON();
-  //   $data = [
-  //     'task'   => $data->task->task,
-  //     'description' => $data->task->description,
-  //     'status' => $data->task->status
-  //   ];
+  public function create()
+  {
+    $validation = \Config\Services::validation();
 
-  //   if ($validation->run($data, 'task') == FALSE) {
-  //     $response = [
-  //       'status'  => 500,
-  //       'error' => true,
-  //       'data'  => $validation->getErrors(),
-  //     ];
-  //     return $this->respond($response, 500);
-  //   } else {
-  //     $stored = $this->model->insert($data);
+    $data = $this->request->getJSON();
 
-  //     if ($stored) {
-  //       $msg = ['message' => 'Task created'];
-  //       $response = [
-  //         'id'  => $stored,
-  //         'status'  => 200,
-  //         'error' => true,
-  //         'data'  => $msg
-  //       ];
-  //       return $this->respond($response, 200);
-  //     }
-  //   }
-  // }
+    $data = [
+      'complain'   => $data->complain->complain,
+      'people' => $data->complain->customer,
+      'project_id' => $data->complain->project
+    ];
+
+    if ($validation->run($data, 'complain') == FALSE) {
+      $response = [
+        'status'  => 500,
+        'error' => true,
+        'data'  => $validation->getErrors(),
+      ];
+      return $this->respond($response, 500);
+    } else {
+      $stored = $this->model->insert($data);
+
+      if ($stored) {
+        $msg = ['message' => 'Complain created'];
+        $datalatest = $this->model->join('project', 'project.id = complain.project_id', 'inner')->join('users', 'users.user_id = complain.people', 'inner')->where('complain.id', $stored)->findAll();
+        print_r($datalatest);
+        $response = [
+          'id'  => $datalatest,
+          'status'  => 200,
+          'data'  => $msg
+        ];
+        return $this->respond($response, 200);
+      }
+    }
+  }
 
   // public function update($id = NULL)
   // {
@@ -96,14 +105,14 @@ class Complain extends ResourceController
       $response = [
         'status'  => 200,
         'service'   => $this->model->findAll(),
-        'message'    => 'Service deleted successfully'
+        'message'    => 'Complain deleted successfully'
       ];
       return $this->respond($response, 200);
     } else {
       $response = [
         'status' => 500,
         'error' => true,
-        'msg'  => 'Service not successfully deleted'
+        'msg'  => 'Complain not successfully deleted'
       ];
       return $this->respond($response, 500);
     }

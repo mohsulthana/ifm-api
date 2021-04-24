@@ -35,7 +35,9 @@ class Validation
 	public $task = [
 		'task'	=> 'required',
 		'description'	=> 'required',
-		'status'	=> 'required'
+		'status'	=> 'required',
+		'project_id'	=> 'required',
+		'worker_id'	=> 'required'
 	];
 
 	public $task_errors = [
@@ -47,14 +49,19 @@ class Validation
 		],
 		'status'	=> [
 			'required'	=> 'Task status is required'
+		],
+		'project_id'	=> [
+			'required'	=> 'Projet ID is required'
+		],
+		'worker_id'	=> [
+			'required'	=> 'Worker ID is required'
 		]
 	];
 
 
 	public $project = [
 		'project'	=> 'required',
-		'description'	=> 'required',
-		'customer_id'	=> 'required'
+		'description'	=> 'required'
 	];
 
 	public $project_errors = [
@@ -63,16 +70,12 @@ class Validation
 		],
 		'project_description'	=> [
 			'required'	=> 'Project description is required.'
-		],
-		'customer_id'	=> [
-			'required'	=> 'Customer ID is required'
 		]
 	];
 
 	public $service = [
 		'service'	=> 'required',
-		'description'	=> 'required',
-		'customer_id'	=> 'required'
+		'description'	=> 'required'
 	];
 
 	public $service_errors = [
@@ -81,10 +84,25 @@ class Validation
 		],
 		'service_description'	=> [
 			'required'	=> 'Project description is required.'
-		],
-		'customer_id'	=> [
-			'required'	=> 'Customer ID is required'
 		]
+	];
+
+	public $complain = [
+		'complain'	=> 'required',
+		'people'	=> 'required',
+		'project_id'	=> 'required',
+	];
+
+	public $complain_errors = [
+		'complain'	=> [
+			'required'	=> 'Complain is required.'
+		],
+		'people'	=> [
+			'required'	=> 'Customer is required.'
+		],
+		'project_id'	=> [
+			'required'	=> 'Project is required.'
+		],
 	];
 	//--------------------------------------------------------------------
 }

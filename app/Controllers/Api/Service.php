@@ -14,11 +14,17 @@ class Service extends ResourceController
 
   public function index($id = null)
   {
-    $data = [
-      'totalProject' => $this->model->query("SELECT a.id, a.project, COUNT(*) AS jumlah FROM project a LEFT JOIN service i ON a.id = i.id GROUP BY a.service_id")->getResultArray(),
-      'service' => $this->model->join('users', 'users.user_id = service.customer_id', 'inner')->findAll()
-    ];
-    return $this->respond($data, 200);
+    return $this->respond($this->model->findAll(), 200);
+  }
+
+  public function show($id = null)
+  {
+      $data = $this->model->getWhere(['product_id' => $id])->getResult();
+      if($data){
+          return $this->respond($data);
+      }else{
+          return $this->failNotFound('No Data Found with id '.$id);
+      }
   }
 
   public function create()
@@ -28,8 +34,7 @@ class Service extends ResourceController
     $data = $this->request->getJSON();
     $data = [
       'service'   => $data->service->service,
-      'description' => $data->service->description,
-      'customer_id' => $data->service->customer_id
+      'description' => $data->service->description
     ];
 
     if ($validation->run($data, 'service') == FALSE) {
@@ -41,56 +46,53 @@ class Service extends ResourceController
       return $this->respond($response, 500);
     } else {
       $stored = $this->model->insert($data);
-
+      $lastData = $this->model->find($stored);
       if ($stored) {
         $response = [
           'id'  => $stored,
           'status'  => 200,
           'error' => true,
-          'data'  => 'Project created'
+          'data'  => $lastData
         ];
         return $this->respond($response, 200);
       }
     }
   }
 
-  // public function update($id = NULL)
-  // {
-  //   $validation =  \Config\Services::validation();
-  //   $json = $this->request->getJSON();
+  public function update($id = NULL)
+  {
+    $validation =  \Config\Services::validation();
+    $json = $this->request->getJSON();
 
-  //   $id = $json->id;
-  //   $data = $this->model->asObject()->find($id);
+    $data = $this->model->asObject()->find($id);
 
-  //   if ($data) {
-  //     $task = [
-  //       'task' => $json->task,
-  //       'description' => $json->description,
-  //       'status'  => $json->status
-  //     ];
+    if ($data) {
+      $service = [
+        'service'   => $json->service->service,
+        'description' => $json->service->description
+      ];
 
-  //     if ($validation->run($task, 'task') == FALSE) {
-  //       $response = [
-  //         'status' => 500,
-  //         'error' => true,
-  //         'data' => $validation->getErrors(),
-  //       ];
-  //       return $this->respond($response, 500);
-  //     } else {
-  //       $update = $this->model->update($id, $task);
-
-  //       if ($update) {
-  //         $msg = ['message' => 'Task updated'];
-  //         $response = [
-  //           'status' => 200,
-  //           'task'   => $this->model->find($id),
-  //           'data' => $msg,
-  //         ];
-  //         return $this->respond($response, 200);
-  //       }
-  //     }
-  //   }
-  // }
+      if ($validation->run($service, 'service') == FALSE) {
+        $response = [
+          'status' => 500,
+          'error' => true,
+          'data' => $validation->getErrors(),
+        ];
+        return $this->respond($response, 500);
+      } else {
+        $update = $this->model->update($id, $service);
+        if ($update) {
+          $msg = ['message' => 'service updated'];
+          $response = [
+            'status' => 200,
+            'service'   => $this->model->find($id),
+            'data' => $msg,
+          ];
+          return $this->respond($response, 200);
+        }
+      }
+    }
+  }
 
   public function delete($id = NULL)
   {

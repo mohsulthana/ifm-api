@@ -26,9 +26,9 @@ class Users extends Migration
 				'constraint'	=> 255
 			],
 			'role'	=> [
-				'type'	=> 'ENUM("worker", "admin", "customer", "super")',
-				'default'	=> "worker",
-				'null'	=> FALSE
+				'type'	=> 'VARCHAR',
+				'constraint'	=> 100,
+				'default'	=> 'customer'
 			],
 			'email'	=> [
 				'type'	=> 'VARCHAR',

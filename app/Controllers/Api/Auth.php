@@ -4,6 +4,10 @@ namespace App\Controllers\Api;
 
 use \Firebase\JWT\JWT;
 use App\Models\Auth_model;
+use App\Models\Super_model;
+use App\Models\Admin_model;
+use App\Models\User_model;
+use App\Models\Worker_model;
 use CodeIgniter\HTTP\Response;
 use CodeIgniter\RESTful\ResourceController;
 
@@ -15,6 +19,10 @@ class Auth extends ResourceController
   public function __construct()
   {
     $this->auth = new Auth_model();
+    $this->super = new Super_model();
+    $this->admin = new Admin_model();
+    $this->customer = new User_model();
+    $this->worker = new Worker_model();
   }
 
   public function privateKey()
@@ -47,12 +55,10 @@ class Auth extends ResourceController
     $data = [
       'name'  => $json->name,
       'email' => $json->email,
-      'password'  => $password_hash,
-      'role'  => $json->role
+      'photo' => $json->photo,
+      'about' => $json->about,
+      'password'  => $password_hash
     ];
-
-    isset($json->service_id) ? $data['service_id'] = $json->service_id : '';
-
     $register = $this->auth->register($data);
 
     if ($register == true) {
@@ -62,7 +68,7 @@ class Auth extends ResourceController
       $output = [
         'status'  => 200,
         'message' => 'User successfully registered!',
-        'data'  => $lastUser
+        'data'  => $this->auth->findAll()
       ];
       return $this->respond($output, 200);
     } else {
@@ -101,6 +107,202 @@ class Auth extends ResourceController
           "email"     => $cek_login['email'],
           "role"      => $cek_login['role'],
           "service"   => $cek_login['service_id'] ? $cek_login['service_id'] : null
+        )
+      );
+
+      $token = JWT::encode($token, $secret_key);
+
+      $output = [
+        'status'   => 200,
+        'message'  => 'Berhasil login',
+        "token"    => $token,
+        "email"    => $email,
+        "expireAt" => $expire_claim
+      ];
+      return $this->respond($output, 200);
+    } else {
+      $output = [
+        'status'   => 401,
+        'message'  => 'Login failed',
+        "password" => $password
+      ];
+      return $this->respond($output, 401);
+    }
+  }
+
+  public function loginSuperAdmin()
+  {
+    $data = $this->request->getJSON();
+    $email    = $data->email;
+    $password = $data->password;
+
+    $cek_login = $this->super->cek_login($email);
+
+    if (password_verify($password, $cek_login['password'])) {
+      $secret_key      = $this->privateKey();
+      $issuer_claim    = "THE_CLAIM";             // this can be the servername. Example: https://domain.com
+      $audience_claim  = "THE_AUDIENCE";
+      $issuedat_claim  = time();                  // issued at
+      $notbefore_claim = $issuedat_claim + 10;    //not before in seconds
+      $expire_claim    = $issuedat_claim + 3600;  // expire time in seconds
+      $token           = array(
+        "iss"  => $issuer_claim,
+        "aud"  => $audience_claim,
+        "iat"  => $issuedat_claim,
+        "nbf"  => $notbefore_claim,
+        "exp"  => $expire_claim,
+        "data" => array(
+          "id"        => $cek_login['super_id'],
+          "name"      => $cek_login['name'],
+          "email"     => $cek_login['email'],
+          "role"      => $cek_login['role'],
+        )
+      );
+
+      $token = JWT::encode($token, $secret_key);
+
+      $output = [
+        'status'   => 200,
+        'message'  => 'Berhasil login',
+        "token"    => $token,
+        "email"    => $email,
+        "expireAt" => $expire_claim
+      ];
+      return $this->respond($output, 200);
+    } else {
+      $output = [
+        'status'   => 401,
+        'message'  => 'Login failed',
+        "password" => $password
+      ];
+      return $this->respond($output, 401);
+    }
+  }
+
+  public function loginAdmin()
+  {
+    $data = $this->request->getJSON();
+    $email    = $data->email;
+    $password = $data->password;
+
+    $cek_login = $this->admin->cek_login($email);
+
+    if (password_verify($password, $cek_login['password'])) {
+      $secret_key      = $this->privateKey();
+      $issuer_claim    = "THE_CLAIM";             // this can be the servername. Example: https://domain.com
+      $audience_claim  = "THE_AUDIENCE";
+      $issuedat_claim  = time();                  // issued at
+      $notbefore_claim = $issuedat_claim + 10;    //not before in seconds
+      $expire_claim    = $issuedat_claim + 3600;  // expire time in seconds
+      $token           = array(
+        "iss"  => $issuer_claim,
+        "aud"  => $audience_claim,
+        "iat"  => $issuedat_claim,
+        "nbf"  => $notbefore_claim,
+        "exp"  => $expire_claim,
+        "data" => array(
+          "id"        => $cek_login['admin_id'],
+          "name"      => $cek_login['name'],
+          "email"     => $cek_login['email'],
+          "role"      => 'admin',
+          "service"   => $cek_login['service_id']
+        )
+      );
+
+      $token = JWT::encode($token, $secret_key);
+
+      $output = [
+        'status'   => 200,
+        'message'  => 'Berhasil login',
+        "token"    => $token,
+        "email"    => $email,
+        "expireAt" => $expire_claim
+      ];
+      return $this->respond($output, 200);
+    } else {
+      $output = [
+        'status'   => 401,
+        'message'  => 'Login failed',
+        "password" => $password
+      ];
+      return $this->respond($output, 401);
+    }
+  }
+
+  public function loginCustomer()
+  {
+    $data = $this->request->getJSON();
+    $email    = $data->email;
+    $password = $data->password;
+
+    $cek_login = $this->customer->cek_login($email);
+
+    if (password_verify($password, $cek_login['password'])) {
+      $secret_key      = $this->privateKey();
+      $issuer_claim    = "THE_CLAIM";             // this can be the servername. Example: https://domain.com
+      $audience_claim  = "THE_AUDIENCE";
+      $issuedat_claim  = time();                  // issued at
+      $notbefore_claim = $issuedat_claim + 10;    //not before in seconds
+      $expire_claim    = $issuedat_claim + 3600;  // expire time in seconds
+      $token           = array(
+        "iss"  => $issuer_claim,
+        "aud"  => $audience_claim,
+        "iat"  => $issuedat_claim,
+        "nbf"  => $notbefore_claim,
+        "exp"  => $expire_claim,
+        "data" => array(
+          "id"        => $cek_login['user_id'],
+          "name"      => $cek_login['name'],
+          "email"     => $cek_login['email'],
+          "role"      => $cek_login['role']
+        )
+      );
+
+      $token = JWT::encode($token, $secret_key);
+
+      $output = [
+        'status'   => 200,
+        'message'  => 'Berhasil login',
+        "token"    => $token,
+        "email"    => $email,
+        "expireAt" => $expire_claim
+      ];
+      return $this->respond($output, 200);
+    } else {
+      $output = [
+        'status'   => 401,
+        'message'  => 'Login failed',
+        "password" => $password
+      ];
+      return $this->respond($output, 401);
+    }
+  }
+
+  public function loginWorker()
+  {
+    $data = $this->request->getJSON();
+    $email    = $data->email;
+    $password = $data->password;
+
+    $cek_login = $this->worker->cek_login($email);
+    if (password_verify($password, $cek_login['password'])) {
+      $secret_key      = $this->privateKey();
+      $issuer_claim    = "THE_CLAIM";             // this can be the servername. Example: https://domain.com
+      $audience_claim  = "THE_AUDIENCE";
+      $issuedat_claim  = time();                  // issued at
+      $notbefore_claim = $issuedat_claim + 10;    //not before in seconds
+      $expire_claim    = $issuedat_claim + 3600;  // expire time in seconds
+      $token           = array(
+        "iss"  => $issuer_claim,
+        "aud"  => $audience_claim,
+        "iat"  => $issuedat_claim,
+        "nbf"  => $notbefore_claim,
+        "exp"  => $expire_claim,
+        "data" => array(
+          "id"        => $cek_login['worker_id'],
+          "name"      => $cek_login['name'],
+          "email"     => $cek_login['email'],
+          "role"      => $cek_login['role']
         )
       );
 

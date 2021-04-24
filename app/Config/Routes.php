@@ -36,6 +36,7 @@ $routes->options('(:any)', 'Api\Auth::options'); //one options method for all ro
 $routes->resource('task');
 $routes->resource('users');
 $routes->resource('project');
+$routes->resource('admin');
 $routes->resource('service');
 $routes->resource('complain');
 

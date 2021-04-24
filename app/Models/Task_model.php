@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class Task_model extends Model {
   protected $table = "task";
-  protected $allowedFields = ['task', 'description', 'status'];
+  protected $allowedFields = ['task', 'description', 'status', 'project_id', 'worker_id', 'before_work', 'after_work'];
 
   public function insertTask($data)
   {
