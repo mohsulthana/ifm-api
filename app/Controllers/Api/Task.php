@@ -19,7 +19,7 @@ class Task extends ResourceController
 
   public function getTasks($id)
   {
-    $task = $this->model->select('task.id, task.task, task.status, task.description, worker.name')->join('project', 'project.id = task.project_id', 'inner')->join('worker', 'worker.worker_id = task.worker_id', 'inner')->where('task.project_id', $id)->findAll();
+    $task = $this->model->select('task.id, task.task, task.status, task.description, worker.name, project.project, project.description, project.id')->join('project', 'project.id = task.project_id', 'inner')->join('worker', 'worker.worker_id = task.worker_id', 'inner')->where('task.project_id', $id)->findAll();
     return $this->respond($task, 200);
   }
 
