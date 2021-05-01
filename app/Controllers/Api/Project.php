@@ -19,7 +19,13 @@ class Project extends ResourceController
 
   public function projectByCustomer($id = null)
   {
-    $projects = $this->model->join('users', 'users.user_id = project.customer_id')->where(['project.customer_id' => $id])->findAll();
+    $projects = $this->model->join('customer', 'customer.user_id = project.customer_id')->where(['project.customer_id' => $id])->findAll();
+    return $this->respond($projects, 200);
+  }
+
+  public function projectFolder($id)
+  {
+    $projects = $this->model->where('id', $id)->findAll();
     return $this->respond($projects, 200);
   }
 
