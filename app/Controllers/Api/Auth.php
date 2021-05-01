@@ -6,7 +6,7 @@ use \Firebase\JWT\JWT;
 use App\Models\Auth_model;
 use App\Models\Super_model;
 use App\Models\Admin_model;
-use App\Models\User_model;
+use App\Models\Customer_model;
 use App\Models\Worker_model;
 use CodeIgniter\HTTP\Response;
 use CodeIgniter\RESTful\ResourceController;
@@ -21,7 +21,7 @@ class Auth extends ResourceController
     $this->auth = new Auth_model();
     $this->super = new Super_model();
     $this->admin = new Admin_model();
-    $this->customer = new User_model();
+    $this->customer = new Customer_model();
     $this->worker = new Worker_model();
   }
 
