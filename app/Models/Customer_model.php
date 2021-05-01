@@ -4,8 +4,8 @@ namespace App\Models;
 
 use CodeIgniter\Model;
 
-class User_model extends Model {
-  protected $table = "users";
+class Customer_model extends Model {
+  protected $table = "customer";
   protected $primaryKey = 'user_id';
 
   public function cek_login($email)
