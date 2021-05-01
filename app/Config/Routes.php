@@ -35,6 +35,7 @@ $routes->post('/api/register', 'Api\Auth::register');
 $routes->options('(:any)', 'Api\Auth::options'); //one options method for all routes.
 $routes->resource('task');
 $routes->resource('users');
+$routes->resource('tag');
 $routes->resource('project');
 $routes->resource('admin');
 $routes->resource('service');
