@@ -5,7 +5,7 @@ use CodeIgniter\Model;
 
 class Auth_model extends Model
 {
-  protected $table = "users";
+  protected $table = "customer";
   protected $primaryKey = "user_id";
 
   public function register($data)

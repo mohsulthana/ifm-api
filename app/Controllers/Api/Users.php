@@ -10,7 +10,7 @@ header("Access-Control-Allow-Methods: GET, OPTIONS, UPDATE, PUT");
 class Users extends ResourceController
 {
   protected $format = 'json';
-  protected $modelName = 'App\Models\User_model';
+  protected $modelName = 'App\Models\Customer_model';
 
   public function index()
   {

@@ -14,13 +14,13 @@ class Complain extends ResourceController
 
   public function index()
   {
-    $complain = $this->model->join('project', 'project.id = complain.project_id', 'inner')->join('users', 'users.user_id = complain.people', 'inner')->findAll();
+    $complain = $this->model->join('project', 'project.id = complain.project_id', 'inner')->join('customer', 'customer.user_id = complain.people', 'inner')->findAll();
     return $this->respond($complain, 200);
   }
 
   public function complainByCustomer($id = NULL)
   {
-    $complain = $this->model->join('project', 'project.id = complain.project_id', 'inner')->join('users', 'users.user_id = complain.people', 'inner')->where('complain.people', $id)->findAll();
+    $complain = $this->model->join('project', 'project.id = complain.project_id', 'inner')->join('customer', 'customer.user_id = complain.people', 'inner')->where('complain.people', $id)->findAll();
     return $this->respond($complain, 200);
   }
 
@@ -48,7 +48,7 @@ class Complain extends ResourceController
 
       if ($stored) {
         $msg = ['message' => 'Complain created'];
-        $datalatest = $this->model->join('project', 'project.id = complain.project_id', 'inner')->join('users', 'users.user_id = complain.people', 'inner')->where('complain.id', $stored)->findAll();
+        $datalatest = $this->model->join('project', 'project.id = complain.project_id', 'inner')->join('customer', 'customer.user_id = complain.people', 'inner')->where('complain.id', $stored)->findAll();
         print_r($datalatest);
         $response = [
           'id'  => $datalatest,
