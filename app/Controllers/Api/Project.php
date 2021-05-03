@@ -25,7 +25,7 @@ class Project extends ResourceController
 
   public function projectFolder($id)
   {
-    $projects = $this->model->where('id', $id)->findAll();
+    $projects = $this->model->select('project.project, project.description, project.id')->join('task', 'task.project_id = project.id', 'inner')->join('worker', 'worker.worker_id = task.worker_id')->where('worker.worker_id', $id)->groupBy('project.id')->findAll();
     return $this->respond($projects, 200);
   }
 
@@ -39,7 +39,7 @@ class Project extends ResourceController
       'project'   => $data->project->project,
       'description' => $data->project->description,
       'customer_id' => $data->project->customer,
-      'qr_code' => $data->project->qr_code
+      'image' => $data->project->image
     ];
 
     if ($validation->run($data, 'project') == FALSE) {
