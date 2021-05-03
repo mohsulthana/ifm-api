@@ -14,10 +14,11 @@ class Task extends ResourceController
 
   public function index()
   {
-    return $this->respond($this->model->findAll(), 200);
+    $worker_id = $this->request->getJSON();
+    return $this->respond($this->model->where('worker_id', $worker_id)->findAll(), 200);
   }
 
-  public function getTasks($id)
+  public function getTasksByProject($id)
   {
     $task = $this->model->select('task.id, task.task, task.status, task.description, worker.name, project.project, project.description, project.id')->join('project', 'project.id = task.project_id', 'inner')->join('worker', 'worker.worker_id = task.worker_id', 'inner')->where('task.project_id', $id)->findAll();
     return $this->respond($task, 200);
@@ -35,13 +36,11 @@ class Task extends ResourceController
       ];
       return $this->respond($response, 200);
     }
-
-    print_r($data);
   }
 
   public function getTaskForWorker($id = NULL)
   {
-    $data = $this->model->join('worker', 'worker.worker_id = task.worker_id', 'inner')->where('task.worker_id', $id)->findAll();
+    $data = $this->model->join('worker', 'worker.worker_id = task.worker_id', 'inner')->where('task.project_id', $id)->findAll();
     return $this->respond($data, 200);
   }
 
