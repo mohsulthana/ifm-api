@@ -49,7 +49,6 @@ class Complain extends ResourceController
       if ($stored) {
         $msg = ['message' => 'Complain created'];
         $datalatest = $this->model->join('project', 'project.id = complain.project_id', 'inner')->join('customer', 'customer.user_id = complain.people', 'inner')->where('complain.id', $stored)->findAll();
-        print_r($datalatest);
         $response = [
           'id'  => $datalatest,
           'status'  => 200,
