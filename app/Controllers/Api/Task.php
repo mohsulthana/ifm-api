@@ -18,6 +18,11 @@ class Task extends ResourceController
     return $this->respond($this->model->where('worker_id', $worker_id)->findAll(), 200);
   }
 
+  public function getAllTasks()
+  {
+    return $this->respond($this->model->findAll(), 200);
+  }
+
   public function getTasksByProject($id)
   {
     $task = $this->model->select('task.id, task.task, task.status, task.description, worker.name, project.project, project.description, project.id')->join('project', 'project.id = task.project_id', 'inner')->join('worker', 'worker.worker_id = task.worker_id', 'inner')->where('task.project_id', $id)->findAll();
@@ -26,7 +31,7 @@ class Task extends ResourceController
 
   public function singleTask($id = NULL)
   {
-    $data = $this->model->select('task.*, project.qr_code')->join('project', 'project.id = task.project_id', 'inner')->find($id);
+    $data = $this->model->select('task.*')->join('project', 'project.id = task.project_id', 'inner')->find($id);
 
     if ($data) {
       $response = [

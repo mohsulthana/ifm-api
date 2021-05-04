@@ -25,7 +25,7 @@ class Project extends ResourceController
 
   public function projectFolder($id)
   {
-    $projects = $this->model->select('project.project, project.description, project.id')->join('task', 'task.project_id = project.id', 'inner')->join('worker', 'worker.worker_id = task.worker_id')->where('worker.worker_id', $id)->groupBy('project.id')->findAll();
+    $projects = $this->model->select('project.project, project.description, project.id, project.image')->join('task', 'task.project_id = project.id', 'inner')->join('worker', 'worker.worker_id = task.worker_id')->where('worker.worker_id', $id)->groupBy('project.id')->findAll();
     return $this->respond($projects, 200);
   }
 
@@ -104,14 +104,13 @@ class Project extends ResourceController
   public function show($id = NULL)
   {
     $get = $this->model->find($id);
-    $task = $this->model->select('task.task, task.status')->join('task', 'task.project_id = project.id', 'inner')->where('project.id', $id)->findAll();
+    $task = $this->model->select('*')->join('task', 'task.project_id = project.id', 'inner')->where('project.id', $id)->findAll();
     // $task = $this->model->join('task', 'task.project_id = project.id', 'inner')->where('project.id', $id)->findAll();
 
     if ($get) {
       $code = 200;
       $response = [
         'status' => $code,
-        'error' => false,
         'data' => $get,
         'task'  => $task
       ];
@@ -120,7 +119,6 @@ class Project extends ResourceController
       $msg = ['message' => 'Not Found'];
       $response = [
         'status' => $code,
-        'error' => true,
         'data' => $msg,
       ];
     }
