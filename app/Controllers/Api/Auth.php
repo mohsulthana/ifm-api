@@ -11,9 +11,6 @@ use App\Models\Worker_model;
 use CodeIgniter\HTTP\Response;
 use CodeIgniter\RESTful\ResourceController;
 
-header('Access-Control-Allow-Origin: *');
-header("Access-Control-Allow-Methods: GET, OPTIONS");
-
 class Auth extends ResourceController
 {
   public function __construct()
@@ -137,6 +134,10 @@ class Auth extends ResourceController
     $password = $data->password;
 
     $cek_login = $this->super->cek_login($email);
+
+    if ($cek_login === []) {
+      return $this->failNotFound("Account not found");
+    }
 
     if (password_verify($password, $cek_login['password'])) {
       $secret_key      = $this->privateKey();
@@ -324,12 +325,5 @@ class Auth extends ResourceController
       ];
       return $this->respond($output, 401);
     }
-  }
-
-  public function options(): Response
-  {
-    return $this->response->setHeader('Access-Control-Allow-Origin', '*') //for allow any domain, insecure
-      ->setHeader('Access-Control-Allow-Headers', '*') //for allow any headers, insecure
-      ->setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE'); //method allowed
   }
 }

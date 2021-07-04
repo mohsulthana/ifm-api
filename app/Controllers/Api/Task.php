@@ -3,6 +3,7 @@
 namespace App\Controllers\Api;
 
 use CodeIgniter\RESTful\ResourceController;
+use App\Libraries\Ciqrcode;
 
 header('Access-Control-Allow-Origin: *');
 header("Access-Control-Allow-Methods: GET, OPTIONS, UPDATE, PUT");
@@ -15,7 +16,7 @@ class Task extends ResourceController
   public function index()
   {
     $worker_id = $this->request->getJSON();
-    return $this->respond($this->model->where('worker_id', $worker_id)->findAll(), 200);
+    return $this->respond($this->model->findAll(), 200);
   }
 
   public function getAllTasks()
@@ -25,13 +26,16 @@ class Task extends ResourceController
 
   public function getTasksByProject($id)
   {
-    $task = $this->model->select('task.id, task.task, task.status, task.description, worker.name, project.project, project.description, project.id')->join('project', 'project.id = task.project_id', 'inner')->join('worker', 'worker.worker_id = task.worker_id', 'inner')->where('task.project_id', $id)->findAll();
+    $task = $this->model->select('task.task, task.id, task.qr_code, task.status, task.description, task.token')->join('project', 'project.id = task.project_id', 'inner')->where('task.project_id', $id)->findAll();
     return $this->respond($task, 200);
   }
 
   public function singleTask($id = NULL)
   {
     $data = $this->model->select('task.*')->join('project', 'project.id = task.project_id', 'inner')->find($id);
+    $data['qr_code'] = base_url() . '/uploads/task/' . $data['id'] . '/' . $data['qr_code'];
+    $data['before_work'] == '' ? base_url() . '/uploads/task/' . $data['id'] . '/before_work/' . $data['before_work'] : null;
+    $data['after_work'] == '' ? base_url() . '/uploads/task/' . $data['id'] . '/after_work/' . $data['after_work'] : null;
 
     if ($data) {
       $response = [
@@ -43,9 +47,9 @@ class Task extends ResourceController
     }
   }
 
-  public function getTaskForWorker($id = NULL)
+  public function getTaskForWorker($id)
   {
-    $data = $this->model->join('worker', 'worker.worker_id = task.worker_id', 'inner')->where('task.project_id', $id)->findAll();
+    $data = $this->model->select('task.id, task.task, task.description, task.status')->join('project', 'project.id = task.project_id', 'inner')->where('task.project_id', $id)->findAll();
     return $this->respond($data, 200);
   }
 
@@ -59,7 +63,6 @@ class Task extends ResourceController
       'task'   => $data->task->task,
       'description' => $data->task->description,
       'status' => $data->task->status,
-      'worker_id' => $data->task->worker_id,
       'project_id'  => $data->task->project_id
     ];
 
@@ -72,19 +75,124 @@ class Task extends ResourceController
       return $this->respond($response, 500);
     } else {
       $stored = $this->model->insert($data);
-      $task = $this->model->select('task.id, task.task, task.status, task.description, worker.name')->join('project', 'project.id = task.project_id', 'inner')->join('worker', 'worker.worker_id = task.worker_id', 'inner')->where('task.project_id', $data['project_id'])->findAll();
 
       if ($stored) {
-        $msg = ['message' => 'Task created'];
+        $token = $this->random_str(10);
+        $this->generateQRCode($stored, $token);
+        $task = $this->model->select('task.task, task.id, task.qr_code, task.status, task.description, task.token')->join('project', 'project.id = task.project_id', 'inner')->where('task.id', $stored)->findAll();
         $response = [
-          'id'  => $task,
-          'status'  => 200,
-          'error' => true,
-          'data'  => $msg
+          'id'  => $stored,
+          'data'  => $task
         ];
-        return $this->respond($response, 200);
+
+        // generate QR Code
+
+        return $this->respondCreated($response, 'Task created');
       }
     }
+  }
+
+  // Update status of work
+  // http://localhost:8080/update-status-work/:id
+  public function updateStatusWork($id)
+  {
+    $row = $this->model->find($id);
+
+    if ($row['status'] == 'Not Completed') {
+      $updateStatus = [
+        'status' => 'On Progress'
+      ];
+      $this->model->transStart();
+      $this->model->updateTask($updateStatus, $id);
+      $this->model->transComplete();
+    } else if ($row['status'] == 'On Progress') {
+      $updateStatus = [
+        'status' => 'Done'
+      ];
+      $this->model->transStart();
+      $this->model->updateTask($updateStatus, $id);
+      $this->model->transComplete();
+    }
+  }
+
+  // Verify QR Code
+  public function generateQRCode($id, $token)
+  {
+    $qrcode = new Ciqrcode();
+
+    if (!is_dir(ROOTPATH . 'public/uploads/task/' . $id)) {
+      mkdir(ROOTPATH . 'public/uploads/task/' . $id, 0777, true);
+    }
+
+    $config['cacheable']  = false; //boolean, the default is true
+    $config['cachedir']    = ROOTPATH . 'cache'; //string, the default is application/cache/
+    $config['errorlog']    = ROOTPATH . 'logs'; //string, the default is application/logs/
+    $config['imagedir']    = ROOTPATH . 'public/uploads/task/' . $id; //direktori penyimpanan qr code
+    $config['quality']    = true; //boolean, the default is true
+    $config['size']      = '2048'; //interger, the default is 1024
+    $config['black']    = array(224, 255, 255); // array, default is array(255,255,255)
+    $config['white']    = array(70, 130, 180); // array, default is array(0,0,0)
+
+    $qrcode->initialize($config);
+
+    $image_name = md5(uniqid(rand(), true)) . '.png';
+
+    // http://localhost:8080/update-status-work/:id
+    $params['data'] = $token; //data yang akan di jadikan QR CODE
+    $params['level'] = 'H'; //H=High
+    $params['size'] = 10;
+    $params['savename'] = $config['imagedir'] . '/' . $image_name; //simpan image QR CODE ke folder assets/images/
+    $qrcode->generate($params);
+
+    $updateQR = [
+      'qr_code' => $image_name,
+      'token' => $token
+    ];
+
+    $this->model->transStart();
+    $this->model->updateTask($updateQR, $id);
+    $this->model->transComplete();
+
+    if ($this->model->transStatus() === FALSE) {
+      return false;
+    }
+    return true;
+  }
+
+  public function verifyToken()
+  {
+    $json = $this->request->getJSON();
+
+    $id = $json->id;
+    $token = $json->token;
+
+    $data = $this->model->find($id);
+
+    // if data ex matched
+    if ($data['token'] == $token) {
+      $data = [
+        'message' => 'Your token is valid.'
+      ];
+
+      return $this->respond($data, 200);
+    } else {
+      return $this->failNotFound('Your token is invalid');
+    }
+  }
+
+  function random_str(
+    int $length = 64,
+    string $keyspace = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+  ): string {
+    if ($length < 1) {
+      throw new \RangeException("Length must be a positive integer");
+    }
+    $pieces = [];
+    $max = mb_strlen($keyspace, '8bit') - 1;
+    for ($i = 0; $i < $length; ++$i) {
+      $pieces[] = $keyspace[random_int(0, $max)];
+    }
+    return implode('', $pieces);
   }
 
   // TODO: BEFORE WORK & AFTER WORK UPDATE
@@ -92,12 +200,17 @@ class Task extends ResourceController
   public function updateBeforeWork($id = NULL)
   {
     $json = $this->request->getJSON();
-
     $data = $this->model->asObject()->find($id);
+
+    // store file to storage
+    $imageFile = $json->before_work;
+    $convert = $this->convertBase64BeforeWork($imageFile, $id);
+
     if ($data) {
       $photo = [
-        'before_work' => $json->before_work,
-        'status'      => $json->status
+        'before_work' => $convert,
+        'status'      => $json->status,
+        'started_time' => date('Y-m-d H:i:s')
       ];
 
       $update = $this->model->update($id, $photo);
@@ -105,9 +218,8 @@ class Task extends ResourceController
       if ($update) {
         $msg = ['message' => 'Photo submitted'];
         $response = [
-          'status' => 200,
           'task'   => $this->model->find($id),
-          'photo' => $this->model->select('before_work')->find($id)
+          'photo' => ROOTPATH . 'public/uploads/task/' . $id . '/before_work/' . $convert
         ];
         return $this->respond($response, 200);
       }
@@ -117,65 +229,52 @@ class Task extends ResourceController
   public function updateAfterWork($id = NULL)
   {
     $json = $this->request->getJSON();
-
     $data = $this->model->asObject()->find($id);
+
+    // store file to storage
+    $imageFile = $json->after_work;
+    $convert = $this->convertBase64AfterWork($imageFile, $id);
+
     if ($data) {
       $photo = [
-        'after_work' => $json->after_work,
-        'status'      => $json->status
+        'after_work' => $convert,
+        'status'      => $json->status,
+        'ended_time' => date('Y-m-d H:i:s')
       ];
 
       $update = $this->model->update($id, $photo);
 
       if ($update) {
-        $msg = ['message' => 'Photo submitted'];
         $response = [
-          'status' => 200,
           'task'   => $this->model->find($id),
-          'photo' => $this->model->select('after_work')->find($id)
+          'photo' => ROOTPATH . 'public/uploads/task/' . $id . '/after_work/' . $convert
         ];
         return $this->respond($response, 200);
       }
     }
   }
 
-  // public function update($id = NULL)
-  // {
-  //   $validation =  \Config\Services::validation();
-  //   $json = $this->request->getJSON();
+  public function cancelTask($id)
+  {
+    $row = $this->model->find($id);
+    $json = $this->request->getJSON();
 
-  //   $id = $json->id;
-  //   $data = $this->model->asObject()->find($id);
-
-  //   if ($data) {
-  //     $task = [
-  //       'task' => $json->task,
-  //       'description' => $json->description,
-  //       'status'  => $json->status
-  //     ];
-
-  //     if ($validation->run($task, 'task') == FALSE) {
-  //       $response = [
-  //         'status' => 500,
-  //         'error' => true,
-  //         'data' => $validation->getErrors(),
-  //       ];
-  //       return $this->respond($response, 500);
-  //     } else {
-  //       $update = $this->model->update($id, $task);
-
-  //       if ($update) {
-  //         $msg = ['message' => 'Task updated'];
-  //         $response = [
-  //           'status' => 200,
-  //           'task'   => $this->model->find($id),
-  //           'data' => $msg,
-  //         ];
-  //         return $this->respond($response, 200);
-  //       }
-  //     }
-  //   }
-  // }
+    if ($row) {
+      $cancel = [
+        'status'  => 'Cancelled',
+        'cancel_reason'  => $json->reason
+      ];
+      $update = $this->model->update($id, $cancel);
+      if ($update) {
+        $msg = ['message' => 'Work cancelled'];
+        $response = [
+          'task'   => $this->model->find($id),
+          'status' => $this->model->select('status')->find($id)
+        ];
+        return $this->respond($response, 200);
+      }
+    }
+  }
 
   public function delete($id = NULL)
   {
@@ -219,5 +318,33 @@ class Task extends ResourceController
         return $this->respond($response, 200);
       }
     }
+  }
+
+  public function convertBase64BeforeWork($image, $id)
+  {
+    if (!is_dir(ROOTPATH . 'public/uploads/task/' . $id . '/before_work')) {
+      mkdir(ROOTPATH . 'public/uploads/task/' . $id . '/before_work', 0777, true);
+    }
+    $image_parts = explode(";base64,", $image);
+    $image_type_aux = explode("image/", $image_parts[0]);
+    $image_type = $image_type_aux[1];
+    $image_base64 = base64_decode($image_parts[1]);
+    $image_name = md5(uniqid(rand(), true)) . '.png';
+    file_put_contents(ROOTPATH . 'public/uploads/task/' . $id . '/before_work/' . $image_name, $image_base64);
+    return $image_name;
+  }
+
+  public function convertBase64AfterWork($image, $id)
+  {
+    if (!is_dir(ROOTPATH . 'public/uploads/task/' . $id . '/after_work')) {
+      mkdir(ROOTPATH . 'public/uploads/task/' . $id . '/after_work', 0777, true);
+    }
+    $image_parts = explode(";base64,", $image);
+    $image_type_aux = explode("image/", $image_parts[0]);
+    $image_type = $image_type_aux[1];
+    $image_base64 = base64_decode($image_parts[1]);
+    $image_name = md5(uniqid(rand(), true)) . '.png';
+    file_put_contents(ROOTPATH . 'public/uploads/task/' . $id . '/after_work/' . $image_name, $image_base64);
+    return $image_name;
   }
 }

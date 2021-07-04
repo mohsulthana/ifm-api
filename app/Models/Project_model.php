@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class Project_model extends Model {
   protected $table = "project";
-  protected $allowedFields = ['project', 'description', 'customer_id', 'service_id', 'image'];
+  protected $allowedFields = ['project', 'description', 'customer_id', 'service_id', 'image', 'tag', 'start_date', 'end_date', 'pdf'];
 
   public function insertProject($data)
   {

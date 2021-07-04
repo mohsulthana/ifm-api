@@ -1,0 +1,132 @@
+CRITICAL - 2021-07-04 09:33:49 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1918): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Model.php(800): CodeIgniter\Database\BaseBuilder->countAll()
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Models/Admin_model.php(19): CodeIgniter\Model->__call('countAll', Array)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Auth.php(189): App\Models\Admin_model->cek_login('admin@gmail.com')
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginAdmin()
+#6 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#7 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#10 {main}
+CRITICAL - 2021-07-04 09:34:32 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1918): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Model.php(800): CodeIgniter\Database\BaseBuilder->countAll()
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Models/Admin_model.php(19): CodeIgniter\Model->__call('countAll', Array)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Auth.php(189): App\Models\Admin_model->cek_login('admin@gmail.com')
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginAdmin()
+#6 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#7 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#10 {main}
+CRITICAL - 2021-07-04 09:34:50 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1918): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Model.php(800): CodeIgniter\Database\BaseBuilder->countAll()
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Models/Admin_model.php(19): CodeIgniter\Model->__call('countAll', Array)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Auth.php(189): App\Models\Admin_model->cek_login('admin@gmail.com')
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginAdmin()
+#6 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#7 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#10 {main}
+CRITICAL - 2021-07-04 09:35:02 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1918): CodeIgniter\Database\BaseConnection->query('SELECT COUNT(*)...', NULL, false)
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Model.php(800): CodeIgniter\Database\BaseBuilder->countAll()
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Models/Admin_model.php(19): CodeIgniter\Model->__call('countAll', Array)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Auth.php(189): App\Models\Admin_model->cek_login('admin@gmail.com')
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginAdmin()
+#6 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#7 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#10 {main}
+CRITICAL - 2021-07-04 10:46:33 --> Too few arguments to function App\Controllers\Api\Project::uploadPDF(), 0 passed in /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php on line 928 and exactly 1 expected
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->uploadPDF()
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#5 {main}
+CRITICAL - 2021-07-04 10:46:41 --> Undefined index: name
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(238): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/Users/mohammad...', 238, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->uploadPDF('32')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-04 10:46:44 --> Undefined index: name
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(238): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/Users/mohammad...', 238, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->uploadPDF('2')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-04 10:46:55 --> Undefined index: name
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(239): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/Users/mohammad...', 239, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->uploadPDF('2')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-04 10:47:07 --> Undefined index: name
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(239): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/Users/mohammad...', 239, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->uploadPDF('2')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-04 11:00:19 --> Call to a member function getRandomName() on null
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->uploadPDF('2')
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#5 {main}
+CRITICAL - 2021-07-04 11:00:27 --> There is no data to insert.
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/BaseModel.php(751): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Model.php(686): CodeIgniter\BaseModel->insert(Array, true)
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(242): CodeIgniter\Model->insert(Array)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->uploadPDF('2')
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#8 {main}
+CRITICAL - 2021-07-04 11:01:28 --> There is no data to insert.
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/BaseModel.php(751): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('insert')
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Model.php(686): CodeIgniter\BaseModel->insert(Array, true)
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(242): CodeIgniter\Model->insert(Array)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->uploadPDF('2')
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#8 {main}
+CRITICAL - 2021-07-04 11:29:05 --> Call to a member function getRandomName() on null
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->uploadPDF('9')
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#5 {main}
+CRITICAL - 2021-07-04 11:30:16 --> Call to a member function getRandomName() on null
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->uploadPDF('9')
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#5 {main}

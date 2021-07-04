@@ -1,0 +1,32 @@
+CRITICAL - 2021-07-03 00:53:10 --> Array to string conversion
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(221): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', '/Users/mohammad...', 221, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->updateBeforeWork('35')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-03 00:57:23 --> Array to string conversion
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(221): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Array to string...', '/Users/mohammad...', 221, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->updateBeforeWork('38')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-03 01:04:00 --> Undefined property: stdClass::$before_work
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(235): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/Users/mohammad...', 235, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->updateAfterWork('38')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-03 01:04:51 --> Undefined property: stdClass::$convert
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(240): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/Users/mohammad...', 240, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->updateAfterWork('38')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}

@@ -1,0 +1,572 @@
+CRITICAL - 2021-07-02 08:26:44 --> fopen(project_sdfsdf.image/jpeg): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fopen(project_s...', '/Users/mohammad...', 59, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(59): fopen('project_sdfsdf....', 'r')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(84): App\Controllers\Api\Project->convertBase64('project_sdfsdf....', 'data:image/jpeg...')
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->create()
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#8 {main}
+CRITICAL - 2021-07-02 08:32:02 --> Undefined property: stdClass::$project_id
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/Users/mohammad...', 45, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->createProjectWorker()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 08:36:19 --> Undefined property: stdClass::$project_id
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/Users/mohammad...', 45, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->createProjectWorker()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 08:36:45 --> Undefined property: stdClass::$project_id
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/Users/mohammad...', 45, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->createProjectWorker()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 08:47:07 --> Undefined property: stdClass::$project_id
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/Users/mohammad...', 45, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->createProjectWorker()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 08:48:08 --> Undefined property: stdClass::$project_id
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/Users/mohammad...', 45, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->createProjectWorker()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 08:50:50 --> Undefined property: stdClass::$project_id
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/Users/mohammad...', 45, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->createProjectWorker()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 08:51:27 --> Undefined property: stdClass::$project_id
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/Users/mohammad...', 45, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->createProjectWorker()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 08:54:07 --> Undefined property: stdClass::$project_id
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/Users/mohammad...', 45, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->createProjectWorker()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 08:54:27 --> Undefined property: stdClass::$project_id
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/Users/mohammad...', 45, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->createProjectWorker()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 08:54:42 --> Undefined property: stdClass::$project_id
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/Users/mohammad...', 45, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->createProjectWorker()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 08:57:09 --> Column 'start_date' cannot be null
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(329): mysqli->query('INSERT INTO `pr...')
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Model.php(259): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/BaseModel.php(774): CodeIgniter\Model->doInsert(Array)
+#6 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Model.php(686): CodeIgniter\BaseModel->insert(Array, true)
+#7 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(98): CodeIgniter\Model->insert(Array)
+#8 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->create()
+#9 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#10 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#12 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#13 {main}
+CRITICAL - 2021-07-02 21:07:46 --> Trying to access array offset on value of type null
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(151): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/Users/mohammad...', 151, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->show('5')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:08:22 --> Trying to access array offset on value of type null
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(151): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/Users/mohammad...', 151, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->show('1')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:08:39 --> Trying to access array offset on value of type null
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(151): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/Users/mohammad...', 151, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->show('1')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:11:34 --> Trying to access array offset on value of type null
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(151): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/Users/mohammad...', 151, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->show('1')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:13:59 --> Trying to access array offset on value of type null
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(158): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/Users/mohammad...', 158, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->show('1')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:14:30 --> Trying to access array offset on value of type null
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(158): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/Users/mohammad...', 158, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->show('1')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:14:57 --> Trying to access array offset on value of type null
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(158): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/Users/mohammad...', 158, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->show('1')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:15:14 --> Trying to access array offset on value of type null
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(159): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/Users/mohammad...', 159, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->show('1')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:15:44 --> Trying to access array offset on value of type null
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(159): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to acces...', '/Users/mohammad...', 159, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->show('1')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:17:07 --> Undefined index: image
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(159): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/Users/mohammad...', 159, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->show('1')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:17:23 --> Undefined index: image
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(159): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/Users/mohammad...', 159, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->show('8')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:17:36 --> Undefined index: image
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(158): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/Users/mohammad...', 158, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->show('8')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:17:45 --> Undefined index: image
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(159): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/Users/mohammad...', 159, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->show('8')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:23:27 --> Class 'App\Libraries\Ciqrcode' not found
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(78): App\Controllers\Api\Task->generateQRCode(30, 'ToaSqkzJ4z')
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->create()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:23:37 --> Class 'App\Libraries\Ciqrcode' not found
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(78): App\Controllers\Api\Task->generateQRCode(31, 'HQWhtsRLST')
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->create()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:31:30 --> Column 'end_date' cannot be null
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(329): mysqli->query('INSERT INTO `pr...')
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Model.php(259): CodeIgniter\Database\BaseBuilder->insert()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/BaseModel.php(774): CodeIgniter\Model->doInsert(Array)
+#6 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Model.php(686): CodeIgniter\BaseModel->insert(Array, true)
+#7 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(101): CodeIgniter\Model->insert(Array)
+#8 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->create()
+#9 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#10 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#12 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#13 {main}
+CRITICAL - 2021-07-02 21:33:41 --> file_get_contents(/Users/mohammadsulthan/Documents/Projects/ifm-api/writable/uploads/qr/images/35/3b699d919cb5ce657eeea09fa0d95769.png): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_conten...', '/Users/mohammad...', 149, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(149): file_get_contents('/Users/mohammad...')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(78): App\Controllers\Api\Task->generateQRCode(35, 'SfRdu5YKzh')
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->create()
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#8 {main}
+CRITICAL - 2021-07-02 21:33:56 --> file_get_contents(/Users/mohammadsulthan/Documents/Projects/ifm-api/writable/uploads/qr/images/36/1d12cac0a7ced75a03e1412159e17e0f.png): failed to open stream: No such file or directory
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_conten...', '/Users/mohammad...', 149, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(149): file_get_contents('/Users/mohammad...')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(78): App\Controllers\Api\Task->generateQRCode(36, 'hDU3ff2lQh')
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->create()
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#8 {main}
+CRITICAL - 2021-07-02 21:38:30 --> Illegal string offset 'id'
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', '/Users/mohammad...', 37, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->singleTask('35')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:38:30 --> Illegal string offset 'id'
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', '/Users/mohammad...', 37, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->singleTask('36')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:38:30 --> Illegal string offset 'id'
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', '/Users/mohammad...', 37, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->singleTask('37')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:38:46 --> Illegal string offset 'id'
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', '/Users/mohammad...', 37, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->singleTask('35')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:38:46 --> Illegal string offset 'id'
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', '/Users/mohammad...', 37, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->singleTask('36')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:38:46 --> Illegal string offset 'id'
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', '/Users/mohammad...', 37, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->singleTask('37')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:39:33 --> Illegal string offset 'id'
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', '/Users/mohammad...', 37, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->singleTask('35')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:39:33 --> Illegal string offset 'id'
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', '/Users/mohammad...', 37, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->singleTask('36')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:39:33 --> Illegal string offset 'id'
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', '/Users/mohammad...', 37, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->singleTask('37')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:40:52 --> Illegal string offset 'id'
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', '/Users/mohammad...', 37, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->singleTask('35')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:40:52 --> Illegal string offset 'id'
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', '/Users/mohammad...', 37, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->singleTask('36')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:40:52 --> Illegal string offset 'id'
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', '/Users/mohammad...', 37, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->singleTask('37')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:41:08 --> Illegal string offset 'id'
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', '/Users/mohammad...', 37, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->singleTask('35')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:41:08 --> Illegal string offset 'id'
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', '/Users/mohammad...', 37, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->singleTask('36')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:41:08 --> Illegal string offset 'id'
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', '/Users/mohammad...', 37, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->singleTask('37')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:41:22 --> Illegal string offset 'id'
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', '/Users/mohammad...', 38, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->singleTask('35')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:41:23 --> Illegal string offset 'id'
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', '/Users/mohammad...', 38, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->singleTask('36')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:41:23 --> Illegal string offset 'id'
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', '/Users/mohammad...', 38, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->singleTask('37')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:41:50 --> Illegal string offset 'id'
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', '/Users/mohammad...', 38, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->singleTask('35')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:41:50 --> Illegal string offset 'id'
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', '/Users/mohammad...', 38, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->singleTask('36')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:41:50 --> Illegal string offset 'id'
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', '/Users/mohammad...', 38, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->singleTask('37')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:42:01 --> Illegal string offset 'id'
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', '/Users/mohammad...', 38, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->singleTask('35')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:42:01 --> Illegal string offset 'id'
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', '/Users/mohammad...', 38, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->singleTask('36')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:42:01 --> Illegal string offset 'id'
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', '/Users/mohammad...', 38, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->singleTask('37')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:44:08 --> Illegal string offset 'id'
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', '/Users/mohammad...', 38, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->singleTask('35')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:44:08 --> Illegal string offset 'id'
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', '/Users/mohammad...', 38, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->singleTask('36')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:44:08 --> Illegal string offset 'id'
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', '/Users/mohammad...', 38, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->singleTask('37')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:44:23 --> Illegal string offset 'id'
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', '/Users/mohammad...', 38, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->singleTask('35')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:44:23 --> Illegal string offset 'id'
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', '/Users/mohammad...', 38, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->singleTask('36')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:44:23 --> Illegal string offset 'id'
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', '/Users/mohammad...', 38, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->singleTask('37')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:44:40 --> Illegal string offset 'id'
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', '/Users/mohammad...', 37, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->singleTask('35')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:44:40 --> Illegal string offset 'id'
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', '/Users/mohammad...', 37, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->singleTask('36')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:44:40 --> Illegal string offset 'id'
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(37): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', '/Users/mohammad...', 37, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->singleTask('37')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:45:06 --> Illegal string offset 'id'
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', '/Users/mohammad...', 38, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->singleTask('35')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:45:06 --> Illegal string offset 'id'
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', '/Users/mohammad...', 38, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->singleTask('36')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:45:06 --> Illegal string offset 'id'
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', '/Users/mohammad...', 38, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->singleTask('37')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:45:30 --> Illegal string offset 'qr_code'
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', '/Users/mohammad...', 38, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->singleTask('35')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:45:30 --> Illegal string offset 'qr_code'
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', '/Users/mohammad...', 38, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->singleTask('36')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-07-02 21:45:30 --> Illegal string offset 'qr_code'
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Task.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', '/Users/mohammad...', 38, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Task->singleTask('37')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Task))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}

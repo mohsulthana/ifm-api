@@ -32,7 +32,7 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->post('/api/register', 'Api\Auth::register');
-$routes->options('(:any)', 'Api\Auth::options'); //one options method for all routes.
+$routes->put('api/update-status-work/(:num)', 'Api\Task::updateStatusWork/$1'); //one options method for all routes.
 $routes->resource('task');
 $routes->resource('users');
 $routes->resource('tag');

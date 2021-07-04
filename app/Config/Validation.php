@@ -36,8 +36,7 @@ class Validation
 		'task'	=> 'required',
 		'description'	=> 'required',
 		'status'	=> 'required',
-		'project_id'	=> 'required',
-		'worker_id'	=> 'required'
+		'project_id'	=> 'required'
 	];
 
 	public $task_errors = [
@@ -52,9 +51,6 @@ class Validation
 		],
 		'project_id'	=> [
 			'required'	=> 'Projet ID is required'
-		],
-		'worker_id'	=> [
-			'required'	=> 'Worker ID is required'
 		]
 	];
 

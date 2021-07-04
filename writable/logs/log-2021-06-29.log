@@ -1,0 +1,851 @@
+ERROR - 2021-06-29 04:08:43 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known
+CRITICAL - 2021-06-29 04:08:43 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...', Array, false)
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Models/Super_model.php(13): CodeIgniter\Database\BaseBuilder->insert(Array)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Super.php(58): App\Models\Super_model->register(Array)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Super->create()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Super))
+#6 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#9 {main}
+ERROR - 2021-06-29 04:09:17 --> Error connecting to the database: No such file or directory
+CRITICAL - 2021-06-29 04:09:17 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...', Array, false)
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Models/Super_model.php(13): CodeIgniter\Database\BaseBuilder->insert(Array)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Super.php(58): App\Models\Super_model->register(Array)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Super->create()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Super))
+#6 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#9 {main}
+ERROR - 2021-06-29 04:10:00 --> Error connecting to the database: No such file or directory
+CRITICAL - 2021-06-29 04:10:00 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...', Array, false)
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Models/Super_model.php(13): CodeIgniter\Database\BaseBuilder->insert(Array)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Super.php(58): App\Models\Super_model->register(Array)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Super->create()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Super))
+#6 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#9 {main}
+ERROR - 2021-06-29 04:11:36 --> Error connecting to the database: MySQL server has gone away
+CRITICAL - 2021-06-29 04:11:36 --> Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...', Array, false)
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Models/Super_model.php(13): CodeIgniter\Database\BaseBuilder->insert(Array)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Super.php(58): App\Models\Super_model->register(Array)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Super->create()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Super))
+#6 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#9 {main}
+ERROR - 2021-06-29 04:12:23 --> Error connecting to the database: MySQL server has gone away
+CRITICAL - 2021-06-29 04:12:23 --> Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(2277): CodeIgniter\Database\BaseConnection->query('INSERT INTO `su...', Array, false)
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Models/Super_model.php(13): CodeIgniter\Database\BaseBuilder->insert(Array)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Super.php(58): App\Models\Super_model->register(Array)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Super->create()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Super))
+#6 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#9 {main}
+ERROR - 2021-06-29 04:12:23 --> Error connecting to the database: MySQL server has gone away
+CRITICAL - 2021-06-29 04:12:23 --> Unable to connect to the database.
+Main connection [MySQLi]: MySQL server has gone away
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Worker.php(23): CodeIgniter\BaseModel->findAll()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Worker->index()
+#6 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Worker))
+#7 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#10 {main}
+ERROR - 2021-06-29 04:13:56 --> Error connecting to the database: Connection refused
+CRITICAL - 2021-06-29 04:13:56 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Worker.php(23): CodeIgniter\BaseModel->findAll()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Worker->index()
+#6 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Worker))
+#7 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#10 {main}
+ERROR - 2021-06-29 04:13:57 --> Error connecting to the database: Connection refused
+CRITICAL - 2021-06-29 04:13:57 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Worker.php(23): CodeIgniter\BaseModel->findAll()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Worker->index()
+#6 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Worker))
+#7 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#10 {main}
+ERROR - 2021-06-29 04:13:57 --> Error connecting to the database: Connection refused
+CRITICAL - 2021-06-29 04:13:57 --> Unable to connect to the database.
+Main connection [MySQLi]: Connection refused
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Worker.php(23): CodeIgniter\BaseModel->findAll()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Worker->index()
+#6 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Worker))
+#7 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#10 {main}
+ERROR - 2021-06-29 04:14:15 --> Error connecting to the database: php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known
+CRITICAL - 2021-06-29 04:14:15 --> Unable to connect to the database.
+Main connection [MySQLi]: php_network_getaddresses: getaddrinfo failed: nodename nor servname provided, or not known
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Worker.php(23): CodeIgniter\BaseModel->findAll()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Worker->index()
+#6 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Worker))
+#7 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#10 {main}
+ERROR - 2021-06-29 04:14:26 --> Error connecting to the database: Access denied for user '****'@'localhost' (using password: YES)
+CRITICAL - 2021-06-29 04:14:26 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: YES)
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(625): CodeIgniter\Database\BaseConnection->initialize()
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Worker.php(23): CodeIgniter\BaseModel->findAll()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Worker->index()
+#6 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Worker))
+#7 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#10 {main}
+CRITICAL - 2021-06-29 04:15:44 --> Class 'Firebase\JWT\JWT' not found
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginWorker()
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#5 {main}
+CRITICAL - 2021-06-29 04:16:45 --> Class 'Firebase\JWT\JWT' not found
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginWorker()
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#5 {main}
+CRITICAL - 2021-06-29 04:17:40 --> Class 'Firebase\JWT\JWT' not found
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginWorker()
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#5 {main}
+CRITICAL - 2021-06-29 04:19:18 --> Class 'Firebase\JWT\JWT' not found
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginWorker()
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#5 {main}
+CRITICAL - 2021-06-29 04:21:18 --> Class 'Firebase\JWT\JWT' not found
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginWorker()
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#5 {main}
+CRITICAL - 2021-06-29 04:21:40 --> Class 'Firebase\JWT\JWT' not found
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginWorker()
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#5 {main}
+CRITICAL - 2021-06-29 04:21:41 --> Class 'Firebase\JWT\JWT' not found
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginWorker()
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#5 {main}
+CRITICAL - 2021-06-29 04:21:42 --> Class 'Firebase\JWT\JWT' not found
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginWorker()
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#5 {main}
+CRITICAL - 2021-06-29 04:21:44 --> Class 'Firebase\JWT\JWT' not found
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginWorker()
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#5 {main}
+CRITICAL - 2021-06-29 04:23:05 --> Class 'Firebase\JWT\JWT' not found
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginWorker()
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#5 {main}
+CRITICAL - 2021-06-29 04:24:07 --> Class 'Firebase\JWT\JWT' not found
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginWorker()
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#5 {main}
+CRITICAL - 2021-06-29 04:24:20 --> Class 'Firebase\JWT\JWT' not found
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginWorker()
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#5 {main}
+CRITICAL - 2021-06-29 04:24:22 --> Class 'Firebase\JWT\JWT' not found
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginWorker()
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#5 {main}
+CRITICAL - 2021-06-29 04:24:24 --> Class 'Firebase\JWT\JWT' not found
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginWorker()
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#5 {main}
+CRITICAL - 2021-06-29 04:27:13 --> Trying to get property 'email' of non-object
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Auth.php(281): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/Users/mohammad...', 281, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginWorker()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-06-29 04:27:14 --> Trying to get property 'email' of non-object
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Auth.php(281): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/Users/mohammad...', 281, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginWorker()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-06-29 04:27:15 --> Trying to get property 'email' of non-object
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Auth.php(281): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/Users/mohammad...', 281, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginWorker()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-06-29 04:27:16 --> Trying to get property 'email' of non-object
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Auth.php(281): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/Users/mohammad...', 281, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginWorker()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-06-29 04:27:18 --> Trying to get property 'email' of non-object
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Auth.php(281): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/Users/mohammad...', 281, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginWorker()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-06-29 04:27:28 --> Trying to get property 'email' of non-object
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Auth.php(282): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/Users/mohammad...', 282, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginWorker()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-06-29 04:27:29 --> Trying to get property 'email' of non-object
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Auth.php(282): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/Users/mohammad...', 282, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginWorker()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-06-29 04:28:37 --> Trying to get property 'email' of non-object
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Auth.php(281): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/Users/mohammad...', 281, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginWorker()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(39): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-06-29 04:28:38 --> Trying to get property 'email' of non-object
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Auth.php(281): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/Users/mohammad...', 281, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginWorker()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(39): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-06-29 04:28:38 --> Trying to get property 'email' of non-object
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Auth.php(281): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/Users/mohammad...', 281, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginWorker()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(39): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-06-29 04:28:39 --> Trying to get property 'email' of non-object
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Auth.php(281): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/Users/mohammad...', 281, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginWorker()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(39): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-06-29 04:29:05 --> Trying to get property 'email' of non-object
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Auth.php(283): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/Users/mohammad...', 283, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginWorker()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-06-29 04:29:13 --> Trying to get property 'email' of non-object
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Auth.php(135): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/Users/mohammad...', 135, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginSuperAdmin()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-06-29 04:29:14 --> Trying to get property 'email' of non-object
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Auth.php(135): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/Users/mohammad...', 135, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginSuperAdmin()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-06-29 04:29:15 --> Trying to get property 'email' of non-object
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Auth.php(135): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/Users/mohammad...', 135, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginSuperAdmin()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-06-29 04:31:37 --> Trying to get property 'email' of non-object
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Auth.php(135): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/Users/mohammad...', 135, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginSuperAdmin()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-06-29 04:31:38 --> Trying to get property 'email' of non-object
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Auth.php(135): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/Users/mohammad...', 135, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginSuperAdmin()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-06-29 04:31:40 --> Trying to get property 'email' of non-object
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Auth.php(135): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/Users/mohammad...', 135, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginSuperAdmin()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-06-29 04:32:01 --> Trying to get property 'email' of non-object
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Auth.php(133): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/Users/mohammad...', 133, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginSuperAdmin()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-06-29 04:32:02 --> Trying to get property 'email' of non-object
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Auth.php(133): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/Users/mohammad...', 133, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginSuperAdmin()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-06-29 04:32:03 --> Trying to get property 'email' of non-object
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Auth.php(133): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/Users/mohammad...', 133, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginSuperAdmin()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-06-29 04:32:04 --> Trying to get property 'email' of non-object
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Auth.php(133): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/Users/mohammad...', 133, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginSuperAdmin()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-06-29 04:32:04 --> Trying to get property 'email' of non-object
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Auth.php(133): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/Users/mohammad...', 133, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginSuperAdmin()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-06-29 04:32:05 --> Trying to get property 'email' of non-object
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Auth.php(133): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/Users/mohammad...', 133, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginSuperAdmin()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-06-29 04:32:16 --> Trying to get property 'email' of non-object
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Auth.php(133): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/Users/mohammad...', 133, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginSuperAdmin()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-06-29 05:54:26 --> Trying to get property 'email' of non-object
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Auth.php(133): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/Users/mohammad...', 133, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginSuperAdmin()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-06-29 06:00:12 --> Undefined index: password
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Auth.php(138): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/Users/mohammad...', 138, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginSuperAdmin()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-06-29 06:00:42 --> Undefined index: password
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Auth.php(138): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/Users/mohammad...', 138, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginSuperAdmin()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-06-29 06:01:09 --> Undefined index: password
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Auth.php(139): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/Users/mohammad...', 139, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginSuperAdmin()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-06-29 06:01:16 --> Undefined index: password
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Auth.php(139): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/Users/mohammad...', 139, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginSuperAdmin()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-06-29 06:01:56 --> Undefined index: password
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Auth.php(139): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/Users/mohammad...', 139, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginSuperAdmin()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-06-29 06:02:46 --> Undefined index: password
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Auth.php(139): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/Users/mohammad...', 139, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginSuperAdmin()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-06-29 06:02:56 --> Undefined index: password
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Auth.php(139): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/Users/mohammad...', 139, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginSuperAdmin()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-06-29 06:03:20 --> Undefined index: password
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Auth.php(139): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/Users/mohammad...', 139, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginSuperAdmin()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-06-29 06:03:29 --> Undefined index: password
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Auth.php(139): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/Users/mohammad...', 139, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginSuperAdmin()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-06-29 06:03:39 --> Undefined index: password
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Auth.php(139): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/Users/mohammad...', 139, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginSuperAdmin()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-06-29 06:03:47 --> Undefined index: password
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Auth.php(139): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/Users/mohammad...', 139, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginSuperAdmin()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-06-29 06:04:06 --> Undefined index: password
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Auth.php(139): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/Users/mohammad...', 139, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginSuperAdmin()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-06-29 06:07:03 --> Undefined index: password
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Auth.php(142): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/Users/mohammad...', 142, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginSuperAdmin()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-06-29 06:07:26 --> Undefined index: password
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Auth.php(143): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/Users/mohammad...', 143, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginSuperAdmin()
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-06-29 06:08:30 --> Class 'Firebase\JWT\JWT' not found
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginSuperAdmin()
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#5 {main}
+CRITICAL - 2021-06-29 06:10:16 --> Class 'Firebase\JWT\JWT' not found
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginSuperAdmin()
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#5 {main}
+CRITICAL - 2021-06-29 06:13:02 --> Class 'Firebase\JWT\JWT' not found
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginSuperAdmin()
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#5 {main}
+CRITICAL - 2021-06-29 06:13:34 --> Class 'Firebase\JWT\JWT' not found
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginSuperAdmin()
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#5 {main}
+CRITICAL - 2021-06-29 06:13:58 --> Class 'Firebase\JWT\JWT' not found
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginSuperAdmin()
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#5 {main}
+CRITICAL - 2021-06-29 06:14:11 --> Class 'App\Controllers\Api\JWT' not found
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Auth->loginSuperAdmin()
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Auth))
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#5 {main}
+CRITICAL - 2021-06-29 06:39:33 --> Not unique table/alias: 'project'
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(329): mysqli->query('SELECT *\nFROM `...')
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(23): CodeIgniter\BaseModel->findAll()
+#7 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->projectByCustomer('2')
+#8 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#9 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#12 {main}
+CRITICAL - 2021-06-29 06:39:48 --> Not unique table/alias: 'project'
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(329): mysqli->query('SELECT *\nFROM `...')
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Model.php(197): CodeIgniter\Database\BaseBuilder->get()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/BaseModel.php(603): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(23): CodeIgniter\BaseModel->findAll()
+#7 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->projectByCustomer('2')
+#8 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#9 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#11 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#12 {main}
+CRITICAL - 2021-06-29 10:02:07 --> Trying to get property 'rating' of non-object
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(185): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/Users/mohammad...', 185, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->updateRating('1')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-06-29 10:02:27 --> Trying to get property 'rating' of non-object
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(186): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Trying to get p...', '/Users/mohammad...', 186, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->updateRating('1')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-06-29 10:18:33 --> There is no data to update.
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/BaseModel.php(1668): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/BaseModel.php(880): CodeIgniter\BaseModel->transformDataToArray(NULL, 'update')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Model.php(718): CodeIgniter\BaseModel->update(Array, NULL)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(187): CodeIgniter\Model->update(Array)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->updateRating('2')
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#6 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#9 {main}
+CRITICAL - 2021-06-29 10:19:35 --> There is no data to update.
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/BaseModel.php(1668): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/BaseModel.php(880): CodeIgniter\BaseModel->transformDataToArray(NULL, 'update')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Model.php(718): CodeIgniter\BaseModel->update(Array, NULL)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(187): CodeIgniter\Model->update(Array)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->updateRating('2')
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#6 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#9 {main}
+CRITICAL - 2021-06-29 10:20:00 --> There is no data to update.
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/BaseModel.php(1668): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/BaseModel.php(880): CodeIgniter\BaseModel->transformDataToArray(NULL, 'update')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Model.php(718): CodeIgniter\BaseModel->update(Array, NULL)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(187): CodeIgniter\Model->update(Array)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->updateRating('2')
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#6 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#9 {main}
+CRITICAL - 2021-06-29 10:20:46 --> There is no data to update.
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/BaseModel.php(1668): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/BaseModel.php(880): CodeIgniter\BaseModel->transformDataToArray(NULL, 'update')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Model.php(718): CodeIgniter\BaseModel->update(Array, NULL)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(187): CodeIgniter\Model->update(Array)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->updateRating('2')
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#6 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#9 {main}
+CRITICAL - 2021-06-29 10:21:16 --> There is no data to update.
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/BaseModel.php(1668): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/BaseModel.php(880): CodeIgniter\BaseModel->transformDataToArray(NULL, 'update')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Model.php(718): CodeIgniter\BaseModel->update(Array, NULL)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(187): CodeIgniter\Model->update(Array)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->updateRating('2')
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#6 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#9 {main}
+CRITICAL - 2021-06-29 10:21:44 --> There is no data to update.
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/BaseModel.php(1668): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/BaseModel.php(880): CodeIgniter\BaseModel->transformDataToArray(NULL, 'update')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Model.php(718): CodeIgniter\BaseModel->update(Array, NULL)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(186): CodeIgniter\Model->update(Array)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->updateRating('2')
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#6 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#9 {main}
+CRITICAL - 2021-06-29 10:23:04 --> There is no data to update.
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/BaseModel.php(1668): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/BaseModel.php(880): CodeIgniter\BaseModel->transformDataToArray(NULL, 'update')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Model.php(718): CodeIgniter\BaseModel->update(Array, NULL)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(183): CodeIgniter\Model->update(Array)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->updateRating('2')
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#6 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#9 {main}
+CRITICAL - 2021-06-29 10:23:23 --> There is no data to update.
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/BaseModel.php(1668): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/BaseModel.php(880): CodeIgniter\BaseModel->transformDataToArray(NULL, 'update')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Model.php(718): CodeIgniter\BaseModel->update(Array, NULL)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(183): CodeIgniter\Model->update(Array)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->updateRating('2')
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#6 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#9 {main}
+CRITICAL - 2021-06-29 10:23:44 --> There is no data to update.
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/BaseModel.php(1668): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/BaseModel.php(880): CodeIgniter\BaseModel->transformDataToArray(NULL, 'update')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Model.php(718): CodeIgniter\BaseModel->update(Array, NULL)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(184): CodeIgniter\Model->update(Array)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->updateRating('2')
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#6 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#9 {main}
+CRITICAL - 2021-06-29 10:23:58 --> Cannot use object of type stdClass as array
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->updateRating('2')
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#5 {main}
+CRITICAL - 2021-06-29 10:24:06 --> There is no data to update.
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/BaseModel.php(1668): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/BaseModel.php(880): CodeIgniter\BaseModel->transformDataToArray(NULL, 'update')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Model.php(718): CodeIgniter\BaseModel->update(Array, NULL)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(184): CodeIgniter\Model->update(Array)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->updateRating('2')
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#6 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#9 {main}
+CRITICAL - 2021-06-29 10:24:13 --> There is no data to update.
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/BaseModel.php(1668): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/BaseModel.php(880): CodeIgniter\BaseModel->transformDataToArray(NULL, 'update')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Model.php(718): CodeIgniter\BaseModel->update(Array, NULL)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(184): CodeIgniter\Model->update(Array)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->updateRating('2')
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#6 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#9 {main}
+CRITICAL - 2021-06-29 10:24:23 --> There is no data to update.
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/BaseModel.php(1668): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/BaseModel.php(880): CodeIgniter\BaseModel->transformDataToArray(NULL, 'update')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Model.php(718): CodeIgniter\BaseModel->update(Array, NULL)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(184): CodeIgniter\Model->update(Array)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->updateRating('2')
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#6 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#9 {main}
+CRITICAL - 2021-06-29 10:24:38 --> There is no data to update.
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/BaseModel.php(1668): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/BaseModel.php(880): CodeIgniter\BaseModel->transformDataToArray(NULL, 'update')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Model.php(718): CodeIgniter\BaseModel->update(Array, NULL)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(183): CodeIgniter\Model->update(Array)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->updateRating('2')
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#6 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#9 {main}
+CRITICAL - 2021-06-29 10:30:37 --> There is no data to update.
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/BaseModel.php(1668): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/BaseModel.php(880): CodeIgniter\BaseModel->transformDataToArray(NULL, 'update')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Model.php(718): CodeIgniter\BaseModel->update(Array, NULL)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(183): CodeIgniter\Model->update(Array)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->updateRating('2')
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#6 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#9 {main}
+CRITICAL - 2021-06-29 10:31:23 --> There is no data to update.
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/BaseModel.php(1668): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/BaseModel.php(880): CodeIgniter\BaseModel->transformDataToArray(NULL, 'update')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Model.php(718): CodeIgniter\BaseModel->update(Array, NULL)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(183): CodeIgniter\Model->update(Array)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->updateRating('2')
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#6 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#9 {main}
+CRITICAL - 2021-06-29 10:39:54 --> There is no data to update.
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/BaseModel.php(896): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Model.php(718): CodeIgniter\BaseModel->update(Array, Array)
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(183): CodeIgniter\Model->update(Array, Array)
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->updateRating('2')
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#8 {main}
+CRITICAL - 2021-06-29 10:40:34 --> Undefined property: stdClass::$rate
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(183): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/Users/mohammad...', 183, Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->updateRating('2')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}
+CRITICAL - 2021-06-29 10:58:27 --> Argument 1 passed to CodeIgniter\BaseModel::replace() must be of the type array or null, string given, called in /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php on line 185
+#0 /Users/mohammadsulthan/Documents/Projects/ifm-api/app/Controllers/Api/Project.php(185): CodeIgniter\BaseModel->replace('2', Array)
+#1 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Api\Project->updateRating('2')
+#2 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Api\Project))
+#3 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Users/mohammadsulthan/Documents/Projects/ifm-api/public/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 /Users/mohammadsulthan/Documents/Projects/ifm-api/vendor/codeigniter4/framework/system/Commands/Server/rewrite.php(45): require_once('/Users/mohammad...')
+#6 {main}

@@ -5,7 +5,6 @@ use CodeIgniter\Config\BaseConfig;
 
 class Email extends BaseConfig
 {
-
 	/**
 	 * @var string
 	 */
