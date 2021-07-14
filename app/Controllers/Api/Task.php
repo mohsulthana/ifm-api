@@ -33,9 +33,9 @@ class Task extends ResourceController
   public function singleTask($id = NULL)
   {
     $data = $this->model->select('task.*')->join('project', 'project.id = task.project_id', 'inner')->find($id);
-    $data['qr_code'] = base_url() . '/uploads/task/' . $data['id'] . '/' . $data['qr_code'];
-    $data['before_work'] == '' ? base_url() . '/uploads/task/' . $data['id'] . '/before_work/' . $data['before_work'] : null;
-    $data['after_work'] == '' ? base_url() . '/uploads/task/' . $data['id'] . '/after_work/' . $data['after_work'] : null;
+    $data['qr_code'] = base_url() . '/uploads/task/' . $id . '/qr_code/' . $data['qr_code'];
+    $data['before_work'] = $data['before_work'] != '' ? base_url() . '/uploads/task/' . $id . '/before_work/' . $data['before_work'] : '';
+    $data['after_work'] = $data['after_work'] != '' ? base_url() . '/uploads/task/' . $id . '/after_work/' . $data['after_work'] : '';
 
     if ($data) {
       $response = [
@@ -120,14 +120,28 @@ class Task extends ResourceController
   {
     $qrcode = new Ciqrcode();
 
-    if (!is_dir(ROOTPATH . 'public/uploads/task/' . $id)) {
-      mkdir(ROOTPATH . 'public/uploads/task/' . $id, 0777, true);
+    // production
+    // if (!is_dir(ROOTPATH . '../apiapp/uploads/task/' . $id . '/qr_code')) {
+    //   mkdir(ROOTPATH . '../apiapp/uploads/task/' . $id . '/qr_code', 0777, true);
+    // }
+
+    // $config['cacheable']  = false; //boolean, the default is true
+    // $config['cachedir']    = ROOTPATH . 'cache'; //string, the default is application/cache/
+    // $config['errorlog']    = ROOTPATH . 'logs'; //string, the default is application/logs/
+    // $config['imagedir']    = ROOTPATH . '../apiapp/uploads/task/' . $id . '/qr_code'; //direktori penyimpanan qr code
+    // $config['quality']    = true; //boolean, the default is true
+    // $config['size']      = '2048'; //interger, the default is 1024
+    // $config['black']    = array(224, 255, 255); // array, default is array(255,255,255)
+    // $config['white']    = array(70, 130, 180); // array, default is array(0,0,0)
+
+    if (!is_dir(ROOTPATH . 'public/uploads/task/' . $id . '/qr_code')) {
+      mkdir(ROOTPATH . 'public/uploads/task/' . $id . '/qr_code', 0777, true);
     }
 
     $config['cacheable']  = false; //boolean, the default is true
     $config['cachedir']    = ROOTPATH . 'cache'; //string, the default is application/cache/
     $config['errorlog']    = ROOTPATH . 'logs'; //string, the default is application/logs/
-    $config['imagedir']    = ROOTPATH . 'public/uploads/task/' . $id; //direktori penyimpanan qr code
+    $config['imagedir']    = ROOTPATH . 'public/uploads/task/' . $id . '/qr_code'; //direktori penyimpanan qr code
     $config['quality']    = true; //boolean, the default is true
     $config['size']      = '2048'; //interger, the default is 1024
     $config['black']    = array(224, 255, 255); // array, default is array(255,255,255)
@@ -199,27 +213,25 @@ class Task extends ResourceController
 
   public function updateBeforeWork($id = NULL)
   {
-    $json = $this->request->getJSON();
     $data = $this->model->asObject()->find($id);
 
-    // store file to storage
-    $imageFile = $json->before_work;
-    $convert = $this->convertBase64BeforeWork($imageFile, $id);
+    $image = $this->request->getFile('before_work');
+    $fileName = $image->getRandomName();
 
     if ($data) {
       $photo = [
-        'before_work' => $convert,
-        'status'      => $json->status,
+        'before_work' => $fileName,
+        'status'      => $this->request->getPost('status'),
         'started_time' => date('Y-m-d H:i:s')
       ];
+      $image->move('uploads/task/' . $id . '/before_work/', $fileName);
 
       $update = $this->model->update($id, $photo);
 
       if ($update) {
-        $msg = ['message' => 'Photo submitted'];
         $response = [
           'task'   => $this->model->find($id),
-          'photo' => ROOTPATH . 'public/uploads/task/' . $id . '/before_work/' . $convert
+          'photo' => base_url(). '/uploads/task/' . $id . '/before_work/' . $fileName
         ];
         return $this->respond($response, 200);
       }
@@ -228,26 +240,24 @@ class Task extends ResourceController
 
   public function updateAfterWork($id = NULL)
   {
-    $json = $this->request->getJSON();
     $data = $this->model->asObject()->find($id);
 
-    // store file to storage
-    $imageFile = $json->after_work;
-    $convert = $this->convertBase64AfterWork($imageFile, $id);
-
+    $image = $this->request->getFile('after_work');
+    $fileName = $image->getRandomName();
     if ($data) {
       $photo = [
-        'after_work' => $convert,
-        'status'      => $json->status,
-        'ended_time' => date('Y-m-d H:i:s')
+        'after_work' => $fileName,
+        'status'      => $this->request->getPost('status'),
+        'started_time' => date('Y-m-d H:i:s')
       ];
+      $image->move('uploads/task/' . $id . '/after_work/', $fileName);
 
       $update = $this->model->update($id, $photo);
 
       if ($update) {
         $response = [
           'task'   => $this->model->find($id),
-          'photo' => ROOTPATH . 'public/uploads/task/' . $id . '/after_work/' . $convert
+          'photo' => base_url(). '/uploads/task/' . $id . '/after_work/' . $fileName
         ];
         return $this->respond($response, 200);
       }
