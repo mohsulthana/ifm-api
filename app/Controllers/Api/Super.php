@@ -53,7 +53,8 @@ class Super extends ResourceController
       'email' => $json->email,
       'photo' => $json->photo,
       'about' => $json->about,
-      'password'  => $password_hash
+      'password'  => $password_hash,
+      'role'  => $json->role
     ];
     $register = $this->super->register($data);
 
