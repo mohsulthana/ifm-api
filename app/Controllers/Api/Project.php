@@ -6,6 +6,8 @@ use App\Models\ProjectRating_model;
 use App\Models\WorkerHasProject_model;
 use CodeIgniter\RESTful\ResourceController;
 
+use function PHPUnit\Framework\isEmpty;
+
 header('Access-Control-Allow-Origin: *');
 header("Access-Control-Allow-Methods: GET, OPTIONS, UPDATE, PUT");
 
@@ -34,7 +36,7 @@ class Project extends ResourceController
   {
     $projects = $this->model->join('worker_has_project', 'worker_has_project.project_id = project.id')->where('worker_has_project.worker_id', $id)->findAll();
     foreach ($projects as $key => $value) {
-      $projects[$key]['image'] = base_url() . '/uploads/project/' . $value['image'];
+      $projects[$key]['image'] = base_url() . '/uploads/project/' . $value['id'] . '/images/' . $value['image'];
     }
     return $this->respond($projects, 200);
   }
@@ -73,51 +75,40 @@ class Project extends ResourceController
 
   public function create()
   {
-    $validation = \Config\Services::validation();
     $data = $this->request->getJSON();
 
-    $imageFile = $data->project->image;
+    $image = $this->request->getFile('image');
+    $fileName = $image->getRandomName();
 
     $data = [
-      'project'   => $data->project->project,
-      'description' => $data->project->description,
-      'customer_id' => $data->project->customer,
-      'tag' => $data->project->tag,
-      'start_date'  => $data->project->start_date,
-      'end_date'  => $data->project->end_date,
-      'service_id'  => $data->project->service
+      'project'   => $this->request->getPost('project'),
+      'description' => $this->request->getPost('description'),
+      'customer_id' => $this->request->getPost('customer'),
+      'tag' => $this->request->getPost('tag'),
+      'start_date'  => $this->request->getPost('start_date'),
+      'end_date'  => $this->request->getPost('end_date'),
+      'service_id'  => $this->request->getPost('service_id'),
+      'image' => $fileName
     ];
 
-    if ($validation->run($data, 'project') == FALSE) {
-      $response = [
-        'status'  => 500,
-        'error' => true,
-        'data'  => $validation->getErrors(),
+    $id = $this->model->insert($data);
+
+    if ($id) {
+      // insert rate project row
+      $image->move('uploads/project/' . $id . '/images/', $fileName);
+      $rate = [
+        'project_id'  => $id,
+        'rate'  => null
       ];
-      return $this->respond($response, 500);
-    } else {
-      $stored = $this->model->insert($data);
+      $this->project_rating->insert($rate);
 
-      if ($stored) {
-        $convert = $this->convertBase64($imageFile, $stored);
-        $this->model->update($stored, [
-          'image' => $convert
-        ]);
+      $project = $this->model->join('tag', 'tag.id = project.tag', 'left')->find($id);
 
-        // insert rate project row
-        $rate = [
-          'project_id'  => $stored,
-          'rate'  => null
-        ];
-        $this->project_rating->insert($rate);
-
-        $project = $this->model->join('tag', 'tag.id = project.tag')->find($stored);
-        $response = [
-          'id'  => $stored,
-          'data'  => $project
-        ];
-        return $this->respondCreated($response, 'Project created');
-      }
+      $response = [
+        'id'  => $id,
+        'data'  => $project
+      ];
+      return $this->respondCreated($response, 'Project created');
     }
   }
 
@@ -162,11 +153,12 @@ class Project extends ResourceController
     $project = $this->model->join('project_rating', 'project.id = project_rating.project_id', 'left')->find($id);
     $task = $this->model->select('*')->join('task', 'task.project_id = project.id', 'inner')->where('project.id', $id)->findAll();
 
-    $project['image'] = base_url() . '/uploads/project/' . $project['image'];
+    $project['image'] = base_url() . '/uploads/project/' . $id . '/images/' . $project['image'];
+    $project['pdf'] = $project['pdf'] == '' ? NULL : base_url() . '/uploads/project/' . $id . '/pdf/' . $project['pdf'];
+
     foreach ($task as $key => $value) {
       $task['qr_code'] = base_url() . '/uploads/task/' . $value['id'] . '/' . $value['qr_code'];
     }
-
 
     if ($project) {
       $code = 200;
@@ -216,7 +208,7 @@ class Project extends ResourceController
       $rating = [
         'rate'  => $json->rating
       ];
-      $this->project_rating->update($id,$rating);
+      $this->project_rating->update($id, $rating);
       $response = [
         'msg' => 'Rating updated',
         'data'  => $this->project_rating->where('project_id', $id)->findAll()
@@ -246,7 +238,7 @@ class Project extends ResourceController
         'pdf' => $fileName
       ]);
       $pdf->move('uploads/project/' . $id . '/pdf/', $fileName);
-      return $this->respondUpdated($fileName, "PDF Successfully uploaded");
+      return $this->respondUpdated(['pdf' => base_url() . '/uploads/project/' . $id . '/pdf/' . $fileName], "PDF Successfully uploaded");
     } else {
       return $this->failNotFound("Project not found");
     }
